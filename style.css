@@ -6,22 +6,13 @@
 
 body{
     font-family: Arial, sans-serif;
-    background-color: rgb(243, 239, 231);
+    background: rgb(205, 234, 239);
     align-items: center;
     display: flex;
     justify-content: center;
     height: 100vh;
 }
 
-/* header{
-    background-color: black;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    top: 0;
-    position: sticky;
-    z-index: 1000;
-} */
 
 .calculator{
     background-color: aqua;
@@ -29,6 +20,7 @@ body{
     border-radius: 10px;
     box-shadow: 0 8px 16px blue;
     max-width: 400px;
+
 }
 
 .button-container{
@@ -36,6 +28,7 @@ body{
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
     margin-top: 20px;
+
 }
 
 .display{
@@ -43,11 +36,72 @@ body{
     outline: none;
     text-align: right;
     width: 100%;
-    padding: 20px;
-    font-size: 1.5rem;
+    padding: 25px;
+    font-size: 2rem;
     border-radius: 4px;
     margin-bottom: 15px;
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.1);
     /* background-color: #222;
     color: #fff; */
+}
+
+button{
+    padding: 17px;
+    font-size: 1.5rem;
+    border-radius: 40px;
+    border: none;
+    /* background-color: ; */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.2 ease-in-out;
+}
+
+button:hover{
+    background-color: #d1e7ff;
+    transform: scale(1.05);
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+button:nth-child(4n){
+    background-color: aquamarine; 
+}
+
+button:nth-child(4n):hover{
+    background-color: forestgreen; 
+} 
+
+/* dark theme */
+body.dark{
+    background-color: rgb(25, 25, 25);
+}
+
+body.dark .calculator{
+    background-color: rgb(43, 43, 43);
+    box-shadow: 0 8px 16px rgb(146, 135, 135);
+}
+
+body.dark .display{
+    background-color: rgb(100, 100, 100);
+    color: white;
+    /* box-shadow: ; */
+}
+
+body.dark button{
+    box-shadow: 2px 2px 5px rgba(174, 174, 174, 0.5);
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+body.dark button:nth-child(4n){
+    box-shadow: 2px 2px 5px rgba(97, 97, 97, 0.5);
+    background-color: orange;
+    color: rgb(0, 0, 0);
+}
+
+body.dark button:nth-child(4n):hover{
+    background-color: rgb(237, 170, 43);
 }
 
