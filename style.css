@@ -18,7 +18,7 @@ body{
     background-color: aqua;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 8px 16px blue;
+    box-shadow: 0 8px 16px rgb(20, 86, 199);
     max-width: 400px;
 
 }
@@ -104,4 +104,3 @@ body.dark button:nth-child(4n){
 body.dark button:nth-child(4n):hover{
     background-color: rgb(237, 170, 43);
 }
-
