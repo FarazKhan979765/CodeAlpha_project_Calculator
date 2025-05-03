@@ -37,5 +37,8 @@ Built using HTML, CSS, and JavaScript with support for both mouse and keyboard i
 
 ## Screenshots
 
-![Gallery Screenshot](screenshots/c1.png)
-![Lightbox screenshot](screenshots/c2.png)
+### Light Mode
+![Calculator Dark Mode](screenshots/c1.png)
+
+### Dark Mode
+![Calculator Light Mode](screenshots/c2.png)
