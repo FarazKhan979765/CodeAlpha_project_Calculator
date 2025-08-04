@@ -4,10 +4,10 @@ let buttons= document.querySelectorAll("button");
 const operators= ["+","-","*","/"];
 let currentinput="";
 display.value="";
-// Defining keys allowed from the keyboard including digits, operators, and controls
+// Defining keys allowed from the keyboard input including digits, operators, and controls
 const allowedKeys = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9","+", "-", "*", "/", ".", "Backspace", "Delete", "Enter","ArrowLeft","ArrowRight"];
   
-// -----------Dark Mode Section--------------
+//--------Dark Mode Section---------
 
 // Selecting the theme toggle button and  the main calculator container
 let themebutton=  document.getElementById("theme");
